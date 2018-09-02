@@ -123,4 +123,5 @@ def num_points_scored(player)
     game_hash[:home][:players][player][:points]
   else
     game_hash[:away][:players][player][:points]
+  end
 end
