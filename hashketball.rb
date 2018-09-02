@@ -146,9 +146,8 @@ def team_names
 end
 
 def player_numbers(team_name)
-  if home?(team)
-    
-  else
+  if home?(team_name)
     binding.pry
+  else
   end
 end
