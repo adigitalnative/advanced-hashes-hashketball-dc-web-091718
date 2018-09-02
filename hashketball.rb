@@ -167,7 +167,16 @@ end
 
 def big_shoe_rebounds
   all_players = game_hash[:home][:players].merge(game_hash[:away][:players])
-  binding.pry
+  
+  biggest_shoe_size = 0
+  biggest_shoe_player_rebounds = nil
+  
+  all_players.each do |player|
+    if player[:shoe] > biggest_shoe_size
+      biggest_shoe_size = player[:shoe]
+      biggest_shoe_player_rebounds = player[:rebounds]
+    end
+  end
   # Find player with biggest shoe shoe_size
   # Return that player's rebounds
 end
