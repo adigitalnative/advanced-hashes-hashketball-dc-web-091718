@@ -222,3 +222,16 @@ def player_with_longest_name
   
   longest_name
 end
+
+def long_name_steals_a_ton?
+  most_steals = {name: "", steals: 0}
+  
+  player_hash.each do |name, stats|
+    if stats[:steals] > most_steals[:steals]
+      most_steals[:name] = name
+      most_steals[:steals] = stats[:steals]
+    end
+  end
+  
+  most_steals[:name] == player_with_longest_name
+end
