@@ -118,7 +118,6 @@ def game_hash
 end
 
 def num_points_scored(player)
-  binding.pry
   if game_hash[:home][:players].keys.include?(player)
     game_hash[:home][:players][player][:points]
   else
