@@ -147,7 +147,7 @@ end
 
 def player_numbers(team_name)
   if home?(team_name)
-    binding.pry
+    game_hash[:home][:players]
   else
   end
 end
