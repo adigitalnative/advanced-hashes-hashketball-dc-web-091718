@@ -158,5 +158,8 @@ def player_numbers(team_name)
 end
 
 def player_stats(player)
-  binding.pry
+  if home_team?(player)
+    # DO follow_redirect!
+  else
+    game_hash[:away][:players][player]
 end
