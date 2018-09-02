@@ -187,7 +187,10 @@ def most_points_scored
   most_points_scored = {name: "", points: 0}
   
   player_hash.each do |name, stats|
-    binding.pry
+    if stats[:points] > most_points_scored[:points]
+      most_points_scored[:name] = name
+      most_points_scored[:points] stats[:points]
+    end
   end
   
   most_points_scored[:name]
