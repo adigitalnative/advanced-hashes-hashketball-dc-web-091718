@@ -164,3 +164,10 @@ def player_stats(player)
     game_hash[:away][:players][player]
   end
 end
+
+def big_shoe_rebounds
+  all_players = game_hash[:home][:players]
+  binding.pry
+  # Find player with biggest shoe shoe_size
+  # Return that player's rebounds
+end
