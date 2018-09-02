@@ -126,5 +126,5 @@ def num_points_scored(player)
 end
 
 def shoe_size(player)
-  # if game
+  home_team?(player) ? game_hash[:home][:players][player][:shoe] : game_hash[:away][:players][player][:shoe]
 end
