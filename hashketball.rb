@@ -165,6 +165,10 @@ def player_stats(player)
   end
 end
 
+def player_hash
+  game_hash[:home][:players].merge(game_hash[:away][:players])
+end
+
 def big_shoe_rebounds
   all_players = game_hash[:home][:players].merge(game_hash[:away][:players])
   
@@ -179,4 +183,8 @@ def big_shoe_rebounds
   end
 
   return biggest_shoe_player_rebounds
+end
+
+def most_points_scored
+  
 end
