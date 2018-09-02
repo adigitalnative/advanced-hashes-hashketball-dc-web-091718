@@ -192,5 +192,5 @@ def most_points_scored
     end
   end
   
-  return most_points_scored
+  return most_points_scored[:name]
 end
