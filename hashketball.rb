@@ -153,6 +153,5 @@ def player_numbers(team_name)
       game_hash[:away][:players].map do |name, stats|
       stats[:number]
     end
-  else
   end
 end
