@@ -146,5 +146,9 @@ def team_names
 end
 
 def player_numbers(team_name)
-  if 
+  if home?(team)
+    game_hash[:home][:players].map do |player|
+      player[:number]
+    end
+  end
 end
