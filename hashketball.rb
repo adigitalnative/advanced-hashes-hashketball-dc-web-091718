@@ -117,10 +117,18 @@ def game_hash
   }
 end
 
+def home_team_player?(player)
+  game_hash[:home][:players].keys.include?(player) ? true : false
+end
+
 def num_points_scored(player)
   if game_hash[:home][:players].keys.include?(player)
     game_hash[:home][:players][player][:points]
   else
     game_hash[:away][:players][player][:points]
   end
+end
+
+def shoe_size(player)
+  if game
 end
