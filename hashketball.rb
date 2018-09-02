@@ -153,5 +153,6 @@ def player_numbers(team_name)
   else
     game_hash[:away][:players].map do |player|
       player[:number]
+    end
   end
 end
