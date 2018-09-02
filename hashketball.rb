@@ -162,4 +162,5 @@ def player_stats(player)
     # DO follow_redirect!
   else
     game_hash[:away][:players][player]
+  end
 end
