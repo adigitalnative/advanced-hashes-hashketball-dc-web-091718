@@ -146,13 +146,5 @@ def team_names
 end
 
 def player_numbers(team_name)
-  if home?(team_name)
-    game_hash[:home][:players].map do |player|
-      player[:number]
-    end
-  else
-    game_hash[:away][:players].map do |player|
-      player[:number]
-    end
-  end
+  binding.pry
 end
