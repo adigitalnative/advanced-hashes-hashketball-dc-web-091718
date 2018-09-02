@@ -159,7 +159,7 @@ end
 
 def player_stats(player)
   if home_team?(player)
-    # DO follow_redirect!
+    game_hash[:home][:players][player]
   else
     game_hash[:away][:players][player]
   end
