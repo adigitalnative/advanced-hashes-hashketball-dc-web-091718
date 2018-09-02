@@ -217,7 +217,6 @@ def player_with_longest_name
   longest_name = ""
   
   player_hash.each do |name, stats|
-    if name > longest_name
-      longest_name = name
-    end
+    name > longest_name ? longest_name = name : nil
+  end
 end
