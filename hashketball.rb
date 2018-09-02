@@ -121,6 +121,10 @@ def home_team?(player)
   game_hash[:home][:players].keys.include?(player) ? true : false
 end
 
+def home?(team)
+  game_hash[:home][:team_name] == team ? true : false
+end
+
 def num_points_scored(player)
   home_team?(player) ? game_hash[:home][:players][player][:points] : game_hash[:away][:players][player][:points]
 end
@@ -139,4 +143,8 @@ end
 
 def team_names
   [game_hash[:home][:team_name], game_hash[:away][:team_name]]
+end
+
+def player_numbers(team_name)
+  if 
 end
