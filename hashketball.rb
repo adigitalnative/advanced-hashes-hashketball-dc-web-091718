@@ -170,12 +170,10 @@ def player_hash
 end
 
 def big_shoe_rebounds
-  all_players = game_hash[:home][:players].merge(game_hash[:away][:players])
-  
   biggest_shoe_size = 0
   biggest_shoe_player_rebounds = nil
   
-  all_players.each do |player, stats|
+  player_hash.each do |player, stats|
     if stats[:shoe] > biggest_shoe_size
       biggest_shoe_size = stats[:shoe]
       biggest_shoe_player_rebounds = stats[:rebounds]
