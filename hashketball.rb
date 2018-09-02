@@ -177,6 +177,8 @@ def big_shoe_rebounds
       biggest_shoe_player_rebounds = player[:rebounds]
     end
   end
+  
+  return biggest_shoe_player_rebounds
   # Find player with biggest shoe shoe_size
   # Return that player's rebounds
 end
